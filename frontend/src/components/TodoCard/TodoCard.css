@@ -24,6 +24,23 @@
   color: #4b5563;
 }
 
+/* Checkbox Styling */
+.checkbox {
+  margin: 0.75rem 0;
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #3b82f6;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.checkbox:hover {
+  transform: scale(1.1);
+}
+
+/* Footer layout */
 .date {
   display: flex;
   justify-content: space-between;
@@ -63,4 +80,27 @@
 
 .trash-icon:hover {
   transform: scale(1.1);
+}
+
+.card-content {
+  position: relative;
+}
+
+.checkbox {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+}
+
+/* Completed Todo Styling */
+.completed h3,
+.completed p {
+  text-decoration: line-through;
+  color: #9ca3af; /* Tailwind gray-400 */
+  transition: all 0.3s ease;
+}
+
+/* Optional: dim the whole card when completed */
+.card.completed {
+  opacity: 0.8;
 }

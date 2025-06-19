@@ -26,7 +26,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div>
+    <div className='home-container'>
       <Navbar />
       <div className="loading">
         {loading && <p>Loading...</p>}

@@ -1,42 +1,71 @@
-import {formatDate} from '../../utils/utils.js'
-import { PenSquareIcon, Trash2Icon } from 'lucide-react'
-import toast from 'react-hot-toast'
-import { Link } from 'react-router'
-import axiosInstance from '../../utils/axios.js'
-import './TodoCard.css'
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // useNavigate instead of Link
+import { formatDate } from '../../utils/utils.js';
+import { PenSquareIcon, Trash2Icon } from 'lucide-react';
+import toast from 'react-hot-toast';
+import axiosInstance from '../../utils/axios.js';
+import './TodoCard.css';
 
-const TodoCard = ({todo, setTodos}) => {
+const TodoCard = ({ todo, setTodos }) => {
+  const [isCompleted, setIsCompleted] = useState(todo.isCompleted || false);
+  const navigate = useNavigate();
 
   const handleDelete = async (e, id) => {
-    e.preventDefault();
+    e.stopPropagation();
     try {
-      await axiosInstance.delete(`/todos/${todo._id}`)
-      setTodos((prev) => prev.filter((todo)=> todo.id !== id)) // It will return 
-      // id (id of every todo contained in prev) of todo which is not equal to the id (id in params) of the given Todd
+      await axiosInstance.delete(`/todos/${todo._id}`);
+      setTodos((prev) => prev.filter((todo) => todo.id !== id));
     } catch (error) {
-      console.log("Error in handleDelete",error);
-      toast.error(error.message)
+      console.log("Error in handleDelete", error);
+      toast.error(error.message);
     }
-  }
+  };
+
+  const handleCardClick = () => {
+    navigate(`/todos/${todo._id}`);
+  };
+
   return (
-    <Link to={`/todos/${todo._id}`} className='card'>
-      <div className='card-content'>
+    <div 
+      className={`card ${isCompleted ? 'completed' : ''}`} 
+      onClick={handleCardClick}>
+      <div className="card-content">
         <h3>{todo.title}</h3>
         <p>{todo.desc}</p>
+        
+        {/* Checkbox: doesn't trigger navigation */}
+        <input
+          type="checkbox"
+          className="checkbox"
+          checked={isCompleted}
+          onChange={(e) => {
+            e.stopPropagation();
+            setIsCompleted(e.target.checked);
+          }}
+          onClick={(e) => e.stopPropagation()}
+        />
+
         <div className="date">
           <span>{formatDate(new Date(todo.createdAt))}</span>
-            <div className="updatedelete">
-              <PenSquareIcon className='update-icon'/>
-              <button 
-                className='delete-icon' 
-                onClick={(e)=> handleDelete(e, todo._id)}>
-                <Trash2Icon className='trash-icon'/>
-              </button>
-            </div>
+          <div className="updatedelete">
+            <PenSquareIcon
+              className="update-icon"
+              onClick={(e) => {
+                e.stopPropagation();
+                navigate(`/todos/${todo._id}`);
+              }}
+            />
+            <button
+              className="delete-icon"
+              onClick={(e) => handleDelete(e, todo._id)}
+            >
+              <Trash2Icon className="trash-icon" />
+            </button>
+          </div>
         </div>
       </div>
-    </Link>
-  )
-}
+    </div>
+  );
+};
 
-export default TodoCard
+export default TodoCard;

@@ -1,11 +1,19 @@
-/* General layout */
+/* Background and layout */
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f9fafb;
+  background-color: #1e293b;
+  color: #f9fafb;/* Softer light gray-blue */
 }
 
-/* Loading section */
+/* Optional: specific to the main wrapper if needed */
+.home-container {
+  min-height: 100vh;
+  background-color: #1e293b;
+  color: #f9fafb;
+}
+
+/* Loading text */
 .loading {
   text-align: center;
   margin-top: 2rem;

@@ -1,0 +1,155 @@
+/* Wrapper */
+.create-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+.create-page .container {
+  max-width: 600px;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.create-page .body > a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #93c5fd;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+}
+
+.create-page .body > a:hover {
+  color: #60a5fa;
+}
+
+.create-page .arrow-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.create-page .card {
+  background-color: #1e293b;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.create-page .card-body h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: #f8fafc;
+}
+
+.create-page label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #cbd5e1;
+}
+
+.create-page .input-title,
+.create-page .input-desc {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #334155;
+  border: 1px solid #475569;
+  color: #f8fafc;
+  font-size: 1rem;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.3s;
+}
+
+.create-page .input-title:focus,
+.create-page .input-desc:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.create-page .input-desc {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.create-page .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.create-page .input-checkbox {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: #3b82f6;
+  cursor: pointer;
+}
+
+.create-page .submit-btn .btn {
+  width: 100%;
+  background-color: #3b82f6;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-page .submit-btn .btn:hover {
+  background-color: #2563eb;
+}
+
+.create-page .submit-btn .btn:disabled {
+  background-color: #64748b;
+  cursor: not-allowed;
+}
+
+.create-page .card {
+  background-color: #1e293b;
+  border-radius: 0.75rem;
+  padding: 2rem 2rem 2.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.create-page .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Add spacing between label and inputs */
+.create-page .title,
+.create-page .desc {
+  margin-bottom: 1rem;
+}
+
+/* Add consistent input padding & spacing */
+.create-page .input-title,
+.create-page .input-desc {
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #334155;
+  border: 1px solid #475569;
+  color: #f8fafc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Make button nicely spaced */
+.create-page .submit-btn {
+  margin-top: 1rem;
+}
+
