@@ -1,0 +1,195 @@
+/* Entire page */
+.TodoUpdate {
+  min-height: 100vh;
+  background-color: #0f172a; /* Dark background */
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+/* Container & Card Body */
+.TodoUpdate .container {
+  max-width: 700px;
+  width: 100%;
+}
+
+.TodoUpdate .body {
+  background-color: #1e293b;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Top nav section */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+  color: #3b82f6;
+}
+
+.ArrowLeftIcon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Delete button */
+.btn {
+  background-color: #ef4444;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #dc2626;
+}
+
+.Trash-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+/* Form fields */
+.main-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Labels */
+.label-title,
+.label-description {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #cbd5e1;
+}
+
+/* Title input */
+.input-title {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #334155;
+  border: 1px solid #475569;
+  color: #f8fafc;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-title:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Description textarea */
+.input-description {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: #334155;
+  border: 1px solid #475569;
+  color: #f8fafc;
+  resize: vertical;
+  min-height: 120px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.input-description:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* Button row */
+.btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Cancel and Save */
+.cancel-btn,
+.Save-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-btn {
+  background-color: #475569;
+  color: #f8fafc;
+}
+
+.cancel-btn:hover {
+  background-color: #64748b;
+}
+
+.Save-btn {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.Save-btn:hover {
+  background-color: #2563eb;
+}
+
+.Save-btn:disabled {
+  background-color: #64748b;
+  cursor: not-allowed;
+}
+
+/* Loading state */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-base-200 {
+  background-color: #0f172a;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+.size-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -78,7 +78,7 @@ const CreatePage = () => {
                   />
                 </div> */}
                 <div className="submit-btn">
-                  <button type='submit' className='btn' disabled={loading}>
+                  <button type='submit' disabled={loading}>
                     {loading ? "Creating..." : "Create Todo"}
                   </button>
                 </div>

@@ -11,10 +11,12 @@ const TodoCard = ({ todo, setTodos }) => {
   const navigate = useNavigate();
 
   const handleDelete = async (e, id) => {
+    e.preventDefault();
     e.stopPropagation();
     try {
       await axiosInstance.delete(`/todos/${todo._id}`);
-      setTodos((prev) => prev.filter((todo) => todo.id !== id));
+      setTodos(prev => prev.filter((item) => item._id !== id));
+      toast.success("Todo deleted successfully");
     } catch (error) {
       console.log("Error in handleDelete", error);
       toast.error(error.message);
