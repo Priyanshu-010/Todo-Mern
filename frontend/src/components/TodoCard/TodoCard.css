@@ -1,0 +1,66 @@
+.card {
+  background-color: white;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #111827;
+}
+
+.card-content p {
+  margin: 0.5rem 0;
+  color: #4b5563;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-top: 1rem;
+}
+
+.updatedelete {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.update-icon {
+  color: #10b981;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.update-icon:hover {
+  transform: scale(1.1);
+}
+
+.delete-icon {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.trash-icon {
+  color: #ef4444;
+  transition: transform 0.2s;
+}
+
+.trash-icon:hover {
+  transform: scale(1.1);
+}

@@ -1,0 +1,24 @@
+/* General layout */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Loading section */
+.loading {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  color: #4b5563;
+}
+
+/* Todos grid */
+.Todos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
