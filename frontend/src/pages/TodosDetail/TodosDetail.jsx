@@ -48,7 +48,6 @@ const TodosDetail = () => {
     }
   }
   const handleDelete = async () => {
-    if(!window.confirm("Are you sure you want to delete this note?")) return
     try {
       await axiosInstance.delete(`/todos/${id}`);
       toast.success("Todo deleted successfully");
@@ -73,14 +72,14 @@ const TodosDetail = () => {
           <div className="top-section">
             <Link to="/" className="back-btn">
               <ArrowLeftIcon className="ArrowLeftIcon" />
-              Back to Notes
+              Back to Todos
             </Link>
             <button 
               className='btn'>
               <Trash2Icon className="Trash-icon" 
               onClick={handleDelete}
               />
-              Delete Note
+              Delete Todo
             </button>
           </div>
 
