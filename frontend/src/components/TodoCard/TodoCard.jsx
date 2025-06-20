@@ -13,6 +13,8 @@ const TodoCard = ({ todo, setTodos }) => {
   const handleDelete = async (e, id) => {
     e.preventDefault();
     e.stopPropagation();
+    const confirm = window.confirm("Are you sure you want to delete this todo?");
+    if (!confirm) return;
     try {
       await axiosInstance.delete(`/todos/${todo._id}`);
       setTodos(prev => prev.filter((item) => item._id !== id));
