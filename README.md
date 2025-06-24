@@ -50,23 +50,22 @@ A simple, clean, and responsive full-stack Todo app built with **React** (fronte
 ### 🔧 Backend  
 
 ```bash
-git clone https://github.com/your-username/todo-backend
-cd todo-backend
+git clone https://github.com/Priyanshu-010/Todo-Mern
+cd backend
 npm install
 npm run dev
 
 ### 🔧 Frontend
 
-git clone https://github.com/your-username/todo-frontend
-cd todo-frontend
+git clone https://github.com/Priyanshu-010/Todo-Mern
+cd frontend
 npm install
 npm run dev
 
 ✍️ Author
 Made with ❤️ by Priyanshu Rai
 Github : https://github.com/Priyanshu-010
-LinkedIn : https://www.linkedin.com/in/priyanshu-rai-b41323264/
-
+LinkedIn : https://www.linkedin.com/in/priyanshuraidev
 ## 📜 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
