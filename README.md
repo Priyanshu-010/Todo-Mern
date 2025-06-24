@@ -47,17 +47,17 @@ A simple, clean, and responsive full-stack Todo app built with **React** (fronte
 
 ## 📦 Installation & Setup
 
-### 🔧 Backend  
-
 ```bash
 git clone https://github.com/Priyanshu-010/Todo-Mern
+
+### 🔧 Backend  
+
 cd backend
 npm install
 npm run dev
 
 ### 🔧 Frontend
 
-git clone https://github.com/Priyanshu-010/Todo-Mern
 cd frontend
 npm install
 npm run dev
