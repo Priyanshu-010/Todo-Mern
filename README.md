@@ -40,9 +40,9 @@ A simple, clean, and responsive full-stack Todo app built with **React** (fronte
 
 ## 🖥️ Screenshots
 
-![HomePage](image.png)
-![CreatePage](image-1.png)
-![Todo Detail/Update Page](image-2.png)
+![HomePage](./assets/Home.png)
+![CreatePage](./assets/createPage.png)
+![Todo Detail/Update Page](./assets/updatePage.png)
 
 
 ## 📦 Installation & Setup
