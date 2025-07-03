@@ -44,3 +44,25 @@ body {
   background-color: #0f172a; /* Deep dark slate */
   color: #f9fafb;
 }
+
+.auth-buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.logout-btn {
+  background-color: #ef4444; /* Red-500 */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626; /* Red-600 */
+}
+
