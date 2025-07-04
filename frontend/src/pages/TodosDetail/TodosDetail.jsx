@@ -1,6 +1,6 @@
 import toast, { LoaderIcon } from 'react-hot-toast'
 import {ArrowLeftIcon, Trash2Icon} from 'lucide-react'
-import { Link, useNavigate, useParams } from 'react-router'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axiosInstance from '../../utils/axios.js'
 import './TodosDetail.css'

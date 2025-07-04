@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router'
+import { Link, useNavigate } from 'react-router-dom'
 import { ArrowLeftIcon } from 'lucide-react'
 import toast from 'react-hot-toast'
 import axiosInstance from '../../utils/axios.js'
