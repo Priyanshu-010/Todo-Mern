@@ -66,3 +66,14 @@ body {
   background-color: #dc2626; /* Red-600 */
 }
 
+.username {
+  margin-right: 1rem;
+  font-weight: 500;
+  color: #a5f3fc; /* light cyan */
+}
+
+.greeting {
+  margin-right: 1rem;
+  font-weight: 500;
+  color: #a5f3fc; /* optional accent color */
+}
