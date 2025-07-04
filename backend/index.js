@@ -11,11 +11,8 @@ const app = express();
 const port = process.env.PORT;
 const __dirname = path.resolve();
 
-if(process.env.NODE_ENV !== "production"){
-  app.use(cors({
-    origin: "http://localhost:5173"
-  }));
-}
+app.use(cors());
+
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
