@@ -1,9 +1,9 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "/api",
+  baseURL: import.meta.env.MODE === "development" ? "http://localhost:3000/api" : "/api",
   headers: {
-    "Content-Type": "application/json",
+    'Content-Type': 'application/json',
   },
 });
 
