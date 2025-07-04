@@ -19,6 +19,10 @@ if(process.env.NODE_ENV !== "production"){
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
+// app.get("/", (req, res) => {
+//   res.send("Hello World!");
+// })
+
 app.use("/api/todos", todoRouter)
 app.use('/api/auth', authRoutes);
 
