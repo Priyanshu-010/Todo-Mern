@@ -1,0 +1,13 @@
+{
+  "name": "todo-mern",
+  "version": "1.0.0",
+  "description": "A clean, responsive, and full-stack **Todo Application** built with the **MERN Stack** (MongoDB, Express, React, Node.js). Users can register, log in, and manage their personal todos securely — all with a sleek dark-mode UI.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
