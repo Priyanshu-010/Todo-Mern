@@ -49,10 +49,11 @@ A clean, responsive, and full-stack **Todo Application** built with the **MERN S
 
 ## 🌐 Live Demo
 
-> _Coming Soon!_  
-> *(Will be deployed using Vercel for frontend & Render for backend)*
+> 🚀 [Todo App Live](https://todo-app-pcwc.onrender.com/login)  
+> *(Hosted using Render for both frontend and backend — may take a few seconds to wake up if idle)*
 
 ---
+
 
 ## 🖥️ Screenshots
 
