@@ -15,13 +15,6 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-
-app.get("/", (req, res)=>{
-  res.send("Hello from backend")
-})
-
-
-
 app.use("/api/todos", todoRouter)
 app.use('/api/auth', authRoutes);
 
